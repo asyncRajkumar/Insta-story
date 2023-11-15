@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+*::selection{
+display: none;
+}
+p::selection{
+    color: white;
+    background-color:rgb(247, 67, 97);
+}
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(247, 67, 97);
+}
+
+#box {
+    width: 280px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(62, 56, 56);
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+#box::-webkit-scrollbar{
+display: none;
+}
+#box #logo{
+    width: 100%;
+}
+#box #logo img{
+    width: 45%;
+margin: 7px 0 0 5px;
+    /* height: 50px; */
+}
+#line{
+    display: none;
+    width: 100%;
+height: 3px;
+background-color: rgb(255, 0, 43) ;
+animation: ann linear 5s 1;
+}
+@keyframes ann {
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+#whole{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+#full{
+    width: 280px;
+    height: 550px;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+#full .back ,
+#whole i{
+  font-size: 23px;
+  margin: 5px;
+  color:  rgb(247, 67, 97);
+}
+#top {
+    width: 100%;
+    height: 90px;
+ 
+    background-color: rgba(236, 227, 227, 0.534);
+    border-bottom: 1px solid black;
+overflow-x: auto;
+overflow-y: hidden;
+white-space: nowrap;
+}
+#top::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    padding:10px 5px ;
+    display: inline-block;
+}
+
+.story img {
+    width: 70px;
+    height: 70px;
+border-radius: 50%;
+padding: 2px;
+white-space: nowrap;
+border: 1.5px solid  rgb(247, 67, 97);
+object-fit: cover;
+}
+.container .img{
+    width: 100%;
+    height: 220px;
+    /* position: relative; */
+}
+.container img{
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* position: relative; */
+}
+.container p{
+    width: 90%;
+font-size: 16px;
+margin:10px 6px 10px 8px;
+}
+.icon{
+   margin: 5px 0 2px 8px;
+}
+.container i{
+   font-size: 23px;
+   margin: 2px;
+}
+.container .love{
+    color: white;
+    -webkit-text-stroke:2px black;
+}
+
+#full .heart {
+    position: relative;
+    left: 29%;
+    top: 50%;
+    font-size: 30px;
+    opacity: .75;
+    color: white;
+    display: none;
+    transition: all ease .4s;
+}
